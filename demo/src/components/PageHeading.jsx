@@ -1,6 +1,5 @@
-// 页面顶部的大标题 + 副标题。
-// 个人主页和文字实验室都用它——同一个组件，靠 props（title / subtitle）显示不同内容。
-// 这就是"复用"：结构写一次，两页共享，只是喂进去的字不一样。
+// 页面顶部的大标题 + 副标题。和 4.4 一字未改。
+// 它纯展示、不带任何交互，所以是个"服务端组件"——顶上不用写 "use client"。
 export default function PageHeading({ title, subtitle }) {
   return (
     <div className="hero-copy">
